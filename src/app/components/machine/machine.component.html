@@ -1,0 +1,5 @@
+<div class="machine" [ngClass]="machine.status.toLowerCase()">
+  <mat-icon class="status-icon">{{ getStatusIcon(machine.status) }}</mat-icon>
+  <mat-icon class="app-icon">{{ machine.icon }}</mat-icon>
+  <div class="machine-name">{{ machine.name }}</div>
+</div>

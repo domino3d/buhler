@@ -1,0 +1,17 @@
+.running {
+  background-color: lightgrey;
+  color: black;
+  .status-icon {
+    color: green;
+  }
+}
+
+.alarm {
+  background-color: red;
+  color: white !important;
+}
+
+.warning {
+  background-color: orange;
+  color: white !important;
+}

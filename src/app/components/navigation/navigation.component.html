@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <img src="assets/logo.png" alt="Bühler Logo" class="logo" />
+  <span class="spacer"></span>
+  <div>
+    <mat-icon>schedule</mat-icon> {{ currentDate | date : "dd.MM.yyyy HH:mm" }}
+  </div>
+  <div><mat-icon>account_circle</mat-icon> Operator</div>
+</mat-toolbar>
+
+<mat-toolbar class="subnav" color="primary">
+  <div *ngFor="let machine of machines">
+    <button mat-button [ngClass]="machine.status.toLowerCase()">
+      {{ machine.name }}
+      <mat-icon class="status-icon" iconPositionEnd>{{
+        getStatusIcon(machine.status)
+      }}</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Scale",
+    "icon": "cloud_download",
+    "status": "Running"
+  },
+  {
+    "name": "Attacher",
+    "icon": "library_books",
+    "status": "Alarm"
+  },
+  {
+    "name": "Packer",
+    "icon": "laptop_chromebook",
+    "status": "Running"
+  },
+  {
+    "name": "Closer",
+    "icon": "libragrid_onry_books",
+    "status": "Warning"
+  }
+]

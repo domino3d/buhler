@@ -1,0 +1,15 @@
+.overview {
+  height: 80vh;
+  align-content: center;
+  margin-top: 20px;
+  padding: 0px 5rem;
+  .machines {
+    display: flex;
+    justify-content: space-between;
+  }
+  .line {
+    border-top: 4px solid green;
+    width: 100%;
+    margin-top: -50px;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="overview">
+  <div class="machines">
+    <app-machine
+      *ngFor="let machine of machines"
+      [machine]="machine"
+    ></app-machine>
+  </div>
+
+  @if (machines.length > 1) {
+  <div class="line"></div>
+  }
+</div>
