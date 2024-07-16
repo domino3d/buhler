@@ -27,7 +27,8 @@ export class NavigationComponent implements OnInit {
       .getMachines()
       .subscribe((data) => (this.machines = data));
 
-    timer(0, 60 * 1000)
+    // timer(0, 60 * 1000) // 1 minute
+    timer(0, 1000)
       .pipe(map((x) => (this.currentDate = new Date())))
       .subscribe();
   }
